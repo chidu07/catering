@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base herf= "feedback.html" target= "self"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Service Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #96c988;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #d8e288;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        label {
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function ocl()
+        {
+            alert("Successfully submited");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback on  Gowdas Catering</h1>
+        <p>We value your feedback! Please take a moment to share your thoughts on the catering services you received.</p>
+        <form action="submit_feedback.php" method="post">
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="event">Event Name/Occasion:</label>
+                <input type="text" id="event" name="event" required>
+            </div>
+            <div>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn" onclick="ocl()">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
